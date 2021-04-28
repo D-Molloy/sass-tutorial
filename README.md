@@ -1,4 +1,5 @@
 # SASS Cheatsheet
+- https://sass-lang.com/documentation
 - compiled scss overwrites destination css every time - only modify scss
 - web-prefixes are added by compiler
 
@@ -138,3 +139,10 @@ $mobile: 800px
     }
   }
 ```
+
+## Calculations
+- css calc() allows mixing of types:
+```css
+width: calc(80%-400px)
+```
+- sass requires the same types

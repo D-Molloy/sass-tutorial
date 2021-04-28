@@ -47,10 +47,7 @@ body {
   h1{
     font-size: size(heading);
   }
-  // can type full class name
-  // .main__paragraph{
-  // or shorthand it with & (the parent)
-  // need to interpolate the & so a separate rule isn't created in the css (e.g. .main__paragraph{} ...we want: `.main .main__paragraph{}`
+  
   #{&}__paragraph1{
     font-weight:weight(thin);
     font-size: size(regular);
