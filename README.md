@@ -146,3 +146,14 @@ $mobile: 800px
 width: calc(80%-400px)
 ```
 - sass requires the same types
+
+## For loop
+- iterate over collections of items
+```css
+// Stagger in the menu options by adding an increasing delay to each item
+@for $i from 1 through 4{
+  .menu-nav__item:nth-child(#{$i}){
+    transition-delay:($i * 0.1s) + 0.15s;
+  }
+}
+```

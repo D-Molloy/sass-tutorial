@@ -6,3 +6,18 @@ $secondary-color: #ff652f;
   margin: 0;
   padding:0;
 }
+
+// slowly ease in elements
+@mixin transition-ease{
+  transition: all .5s ease-in-out;
+}
+
+// if the color is bright, return black
+@function set-text-color($color){
+  @if(lightness($color) >40%){
+    @return #000;
+  } @else{
+    // if its a dark color, return white
+    @return #fff
+  }
+}
